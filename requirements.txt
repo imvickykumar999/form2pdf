@@ -14,3 +14,4 @@ SQLAlchemy==1.3.0
 Werkzeug==0.16.0
 WTForms==2.1
 fpdf
+PyPDF2

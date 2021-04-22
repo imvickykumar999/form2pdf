@@ -1,19 +1,5 @@
-from PIL import Image
-import os, PyPDF2, img2pdf
-
-# img_path = "download.jpg"
-# pdf_path = "no_password.pdf"
-# encrypt = 'encrypted_output.pdf'
-
-def imgtopdf(img_path = "imvickykumar999.jpg"):
-    image = Image.open(img_path)
-    pdf_bytes = img2pdf.convert(image.filename)
-
-    file = open(f"{img_path.split('.')[0]}.pdf", "wb")
-    file.write(pdf_bytes)
-
-    image.close()
-    file.close()
+# from PIL import Image
+import os, PyPDF2
 
 def encryptpdf(pdf_path = "imvickykumar999.pdf", passw = 'pass'):
     pdfFile = open(pdf_path, 'rb')
