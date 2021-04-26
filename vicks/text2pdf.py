@@ -18,10 +18,11 @@ def convert():
 
     # insert the texts in pdf
     for x in f:
-        pdf.cell(200, 10, txt = x, ln = 1, align = 'C')
+        pdf.cell(200, 10, txt = x, ln = 1)
 
     # save the pdf with name .pdf
     pdf.output("myfile.pdf")
 
-    from vicks import encrypt as enc
-    enc.encryptpdf("myfile.pdf")
+    # uncomment to ...password protect
+    # from vicks import encrypt as enc
+    # enc.encryptpdf("/myfile.pdf")

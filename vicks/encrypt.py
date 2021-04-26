@@ -15,4 +15,3 @@ def encryptpdf(pdf_path = "imvickykumar999.pdf", passw = 'pass'):
     resultPdf = open(f'{pdf_path.split(".")[0]}.pdf', 'wb')
     pdfWriter.write(resultPdf)
     resultPdf.close()
-                     
